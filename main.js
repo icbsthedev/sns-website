@@ -1,10 +1,8 @@
-document.onload = ()=>{
-
+document.addEventListener("DOMContentLoaded",
+    () => {
     [... document
         .getElementsByTagName("button")]
-            .forEach(btn =>
-                btn.addEventListener(
-                    "click",
-                    () => console.log('hello')));
-
-}
+        .forEach(btn=>btn
+            .addEventListener("click", 
+                ()=>console.log("test")));
+});
