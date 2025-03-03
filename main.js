@@ -1,10 +1,10 @@
 document.onload = ()=>{
 
-    [...document
+    [... document
         .getElementsByTagName("button")]
-            .forEach(btn=>
+            .forEach(btn =>
                 btn.addEventListener(
                     "click",
-                    (evt) => alert('hello')));
+                    () => console.log('hello')));
 
 }
